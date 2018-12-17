@@ -15,19 +15,55 @@
       <form id="msform">
         <!-- progressbar -->
         <ul id="progressbar">
-          <li class="active">Account Setup</li>
-          <li>Social Profiles</li>
-          <li>Personal Details</li>
+          <li class="active">Personal Info</li>
+          <li>Adress Info</li>
+          <li>Bicycle Info</li>
+          <li>Insurance Info</li>
         </ul>
         <!-- fieldsets -->
         <fieldset>
-          <h2 class="fs-title">Create your account</h2>
-          <h3 class="fs-subtitle">This is step 1</h3>
-          <input type="text" name="email" placeholder="Email" />
-          <input type="password" name="pass" placeholder="Password" />
-          <input type="password" name="cpass" placeholder="Confirm Password" />
-          <input type="button" name="next" class="next action-button" value="Next" />
+          <h2 class="fs-title">Let's get you started</h2>
+          <h3 class="fs-subtitle">Tell us a bit about yourself</h3>
+
+          <div class="col-md-12 col-lg-12 mb-3">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" class="form-control form-control-lg" name="name" placeholder="Name" />
+          </div>
+
+          <div class="col-md-12 col-lg-12 mb-3">
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" name="email" 
+            class="form-control form-control-lg"
+            placeholder="Email" />
+          </div>
+
+          <div class="col-md-12 col-lg-12 mb-3">
+            <label for="age" class="sr-only">Age</label>
+            <input type="text" name="age"
+            class="form-control form-control-lg"
+            placeholder="Age" />
+          </div>
+
+          <div class="col-md-12 col-lg-12 mb-3">
+            <label for="gender" class="sr-only">Gender</label>
+            <input type="text" name="gender"
+            class="form-control form-control-lg"
+            placeholder="Gender" />
+          </div>
+
+          <div class="col-md-12 col-lg-12 mb-3">
+            <label for="phone_number" class="sr-only">Phone Number</label>
+            <input type="tel" name="phone_number"
+            class="form-control form-control-lg"
+            placeholder="Phone Number" />
+          </div>
+
+          <div class="col-md-12 col-lg-12">
+            <input type="button" name="next" class="next action-button" value="Next" />
+          </div>
         </fieldset>
+
+        <!-- Address Information -->
         <fieldset>
           <h2 class="fs-title">Social Profiles</h2>
           <h3 class="fs-subtitle">Your presence on the social network</h3>
@@ -37,6 +73,8 @@
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
+
+        <!-- Bicycle Information -->
         <fieldset>
           <h2 class="fs-title">Personal Details</h2>
           <h3 class="fs-subtitle">We will never sell it</h3>
